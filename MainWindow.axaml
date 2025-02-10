@@ -1,0 +1,95 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="VoidTerminal.MainWindow"
+        Title="Void Terminal"
+        Width="800"
+        Height="600"
+        Background="Black">
+
+    <Window.Styles>
+        <Style Selector="TextBox">
+            <Setter Property="Template">
+                <ControlTemplate>
+                    <Border Background="{TemplateBinding Background}"
+                            Padding="{TemplateBinding Padding}">
+                        <TextPresenter Name="PART_TextPresenter"
+                                     Text="{TemplateBinding Text}"
+                                     CaretIndex="{TemplateBinding CaretIndex}"
+                                     SelectionStart="{TemplateBinding SelectionStart}"
+                                     SelectionEnd="{TemplateBinding SelectionEnd}"
+                                     TextAlignment="{TemplateBinding TextAlignment}"
+                                     TextWrapping="{TemplateBinding TextWrapping}"
+                                     PasswordChar="{TemplateBinding PasswordChar}"
+                                     RevealPassword="{TemplateBinding RevealPassword}"
+                                     SelectionBrush="White"
+                                     SelectionForegroundBrush="Black"
+                                     CaretBrush="White"
+                                     Background="Transparent"
+                                     Foreground="White"
+                                     VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter>
+        </Style>
+    </Window.Styles>
+
+    <Grid>
+        <ScrollViewer Margin="0,0,0,80">
+            <StackPanel x:Name="outputPanel" Margin="20">
+                <TextBlock Text="V O I D   T E R M I N A L"
+                         Foreground="White"
+                         FontFamily="Courier New"
+                         FontSize="24"
+                         FontWeight="Bold"
+                         Margin="0,0,0,20"/>
+                
+                <TextBlock Text="[ SYSTEM INITIALIZED ]"
+                         Foreground="White"
+                         FontFamily="Courier New"
+                         FontSize="18"
+                         Margin="0,0,0,5"/>
+                
+                <TextBlock Text="[ AWAITING INPUT ]"
+                         Foreground="White"
+                         FontFamily="Courier New"
+                         FontSize="18"
+                         Margin="0,0,0,20"/>
+                
+                <TextBlock Text="Type 'help' for available commands"
+                         Foreground="#CCCCCC"
+                         FontFamily="Courier New"
+                         FontSize="16"
+                         Margin="0,0,0,20"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <Border VerticalAlignment="Bottom"
+                Margin="20"
+                BorderBrush="White"
+                BorderThickness="1"
+                Background="#0DFFFFFF">
+            <Grid ColumnDefinitions="Auto,*">
+                <TextBlock Grid.Column="0"
+                          Text=">"
+                          Foreground="White"
+                          FontFamily="Courier New"
+                          FontSize="18"
+                          VerticalAlignment="Center"
+                          Margin="10,5"/>
+                
+                <TextBox x:Name="inputBox"
+                         Grid.Column="1"
+                         Background="Transparent"
+                         Foreground="White"
+                         FontFamily="Courier New"
+                         FontSize="18"
+                         BorderThickness="0"
+                         Padding="5,5"
+                         Margin="0,2"
+                         TextWrapping="Wrap"
+                         AcceptsReturn="False"
+                         VerticalContentAlignment="Center"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

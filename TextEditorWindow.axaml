@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="VoidTerminal.TextEditorWindow"
+        Title="Text Editor"
+        Width="600"
+        Height="400"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid RowDefinitions="*,Auto">
+        <TextBox x:Name="EditorTextBox"
+                 Grid.Row="0"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 FontFamily="Courier New"
+                 FontSize="14"
+                 Padding="5"
+                 TextWrapping="Wrap"/>
+        
+        <StackPanel Grid.Row="1" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right" 
+                    Margin="10">
+            <Button Content="Save" 
+                    Click="OnSaveClick" 
+                    Margin="0,0,10,0"/>
+            <Button Content="Exit" 
+                    Click="OnExitClick"/>
+        </StackPanel>
+    </Grid>
+</Window> 
