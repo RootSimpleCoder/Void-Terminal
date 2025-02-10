@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/b735c2f7-4f30-49e8-b88a-db0bfaf7b6cb)
+
 # Void Terminal
 
 A modern terminal emulator with retro aesthetics, featuring comprehensive file system operations, network tools, and additional entertainment features. Built with Avalonia UI framework.
