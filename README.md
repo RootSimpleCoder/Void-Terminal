@@ -4,6 +4,10 @@
 
 A modern terminal emulator with retro aesthetics, featuring comprehensive file system operations, network tools, and additional entertainment features. Built with Avalonia UI framework.
 
+## Telegram channel
+
+Void-Terminal telegram channel: https://t.me/Void_Terminal
+
 ## Description
 
 Void Terminal is a powerful terminal emulator that combines classic command-line functionality with a modern architecture. It provides a stylish retro interface with a dark theme, offering extensive file system management, network tools, and Lua script execution capabilities. For added value, it includes a built-in text editor and a classic snake game.
