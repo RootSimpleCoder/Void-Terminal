@@ -70,6 +70,8 @@ Void Terminal is a powerful terminal emulator that combines classic command-line
   - `CAT` - Display file contents
   - `RENAME` - Rename file or directory
   - `COPY` - Copy file to destination
+  - `FIND` - Search for files by pattern
+  - `GREP` - Search for text in files
 
 - Archive Operations:
   - `ZIP` - Create ZIP archive
@@ -83,12 +85,21 @@ Void Terminal is a powerful terminal emulator that combines classic command-line
   - `HISTORY` - Show command history
   - `DATE` - Show current date and time
   - `PING` - Test host availability
+  - `SYSINFO` - Show system information
+  - `PS` - List running processes
+  - `KILL` - Terminate process by PID
+  - `TOP` - Monitor system resources
+  - `DISK` - Show disk information
+  - `CALC` - Simple calculator
+  - `DIFF` - Compare two files
+  - `INFO` - Show Void Terminal information
 
 - Additional Tools:
   - `EDIT` - Open text editor
   - `LUA` - Execute Lua script
   - `GAME` - Play Snake game
   - `HELP` - Show available commands
+  - `GENASC` - Generate ASCII art text (max 10 chars)
 
 ## Usage
 
